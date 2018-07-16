@@ -1,0 +1,12 @@
+en:
+  posts:
+    index:
+      add_new: Add New
+      confirm: Sure to delete?
+      delete: Delete
+      edit: Edit
+    show:
+      index: Back to INDEX
+    form:
+      index: Back to INDEX
+    

@@ -14,9 +14,13 @@
 </p>
 
 <p>
-    <%= f.submit %>
+    <%= f.submit class: 'btn btn-sm btn-primary' %>
 </p>
 <% end %>
+
+<div>
+    <%= link_to t('.index'), posts_path, class: 'btn btn-sm btn-secondary' %> 
+</div>
 
 <script>
     $(function(){

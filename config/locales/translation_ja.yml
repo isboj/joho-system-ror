@@ -1,0 +1,15 @@
+ja:
+  activerecord:
+    models:
+      comment: コメント  #g
+      post: 役職  #g
+
+    attributes:
+      comment:
+        body: 体  #g
+        post: :activerecord.models.post  #g
+
+      post:
+        body: 体  #g
+        comments: コメント  #g
+        title: タイトル  #g
