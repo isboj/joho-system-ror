@@ -1,0 +1,12 @@
+<% if session[:user_id] %>
+    <%= link_to 'サインアウト', posts_path, class: 'btn btn-sm btn-primary' %>
+    <%= link_to 'サインアップ', posts_path, class: 'btn btn-sm btn-secondary' %>
+<% else %>
+    <!-- usesにレコードが存在していた場合 -->
+    <% if User.all.any? %>
+    <%= link_to 'サインイン', posts_path, class: 'btn btn-sm btn-primary' %>
+    <% else %>
+    <!-- usersにレコードが存在していなかった場合 -->
+    <%= link_to 'サインアウト', posts_path, class: 'btn btn-sm btn-secondary' %>
+    <% end %>
+<% end %>
