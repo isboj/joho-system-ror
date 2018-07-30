@@ -9,3 +9,11 @@ ja:
       index: 一覧へ戻る
     form:
       index: 一覧へ戻る
+    signin:
+      signin: サインイン
+      signout: サインアウト
+      signup: サインアップ
+      display_name: 表示名
+  users:
+    form:
+      index: 一覧へ戻る

@@ -5,7 +5,9 @@
 <div class="d-flex justify-content-between">
 <h2> My Posts</h2>
     <div>
+    <% if session[:user_id] %>
     <%= link_to t('.add_new'), new_post_path, class: 'btn btn-sm btn-primary' %> 
+    <% end %>
     </div>
 </div>
 

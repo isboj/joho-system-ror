@@ -9,4 +9,11 @@ en:
       index: Back to INDEX
     form:
       index: Back to INDEX
-    
+    signin:
+      signin: Sign In
+      signout: Sign Out
+      signup: Sign Up
+      display_name: Display Name
+  users:
+    form:
+      index: Back to INDEX
