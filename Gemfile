@@ -27,6 +27,7 @@ gem 'bootstrap', '~> 4.1.1'
 # ブラウザ設定言語の読み取り
 gem 'http_accept_language', '~> 2.1.1'
 
+gem 'pundit'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'

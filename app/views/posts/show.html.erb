@@ -1,4 +1,5 @@
 <h2><%= @post.title %></h2>
+<p class="text-right"><%= @post.user.display_name%></p>
 <p><%= simple_format @post.body %></p>
 
 <h3>Comments</h3>
@@ -8,11 +9,13 @@
     <% @post.comments.each do |comment| %>
     <li>
         <%= comment.body %>
+        <% if comment.post.user == current_user %>
         <%= link_to '[x]', 
         post_comment_path(@post, comment), 
         method: :delete, 
         class: 'command',
         data: { confirm: 'Sure?' } %>
+        <% end %>
     </li>
     <% end %>
 </ul>
